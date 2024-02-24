@@ -39,7 +39,6 @@ class TaskPage:
     def set_date(self, day, month, year):
         # Open the DatePicker
         self.driver.find_element_by_id(self.date_selector).click()
-
         # Wait for DatePicker to be visible
         WebDriverWait(self.driver, 10).until(
             EC.visibility_of_element_located((By.ID, "android:id/datePicker"))

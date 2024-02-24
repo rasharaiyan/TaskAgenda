@@ -24,7 +24,6 @@ class TestColorsAndEventsTypes(unittest.TestCase):
         self.assertTrue(
             self.wait.until(EC.presence_of_element_located((By.ID, colors_events_types_page.event_type_name))))
         colors_events_types_page.enter_event_type_name("Meeting")
-
         # Choose color for event type and verify selection
         colors_events_types_page.choose_color_for_event_type()
         # Assuming there's a confirmation element or color change that can be checked

@@ -12,7 +12,6 @@ class ColorsEventsTypes:
         self.save_button = 'com.claudivan.taskagenda:id/item_salvar'
 
     def choose_main_color(self):
-        """Selects the main color."""
         self.driver.find_element_by_xpath(self.main_color_choose).click()
 
     def toggle_dark_mode(self):

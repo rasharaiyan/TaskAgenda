@@ -31,6 +31,7 @@ class TestMenuNavigation(unittest.TestCase):
         self.assertTrue(
             self.wait.until(EC.presence_of_element_located((By.ID, 'specific_element_for_colors_and_events'))))
 
+
     def test_open_about(self):
         menu_page = MenuPage(self.driver)
         menu_page.open_about()

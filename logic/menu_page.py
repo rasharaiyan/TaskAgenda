@@ -9,11 +9,9 @@ class MenuPage:
         self.about = 'com.claudivan.taskagenda:id/btSobre'
 
     def go_to_all_events(self):
-        """Navigate to the All Events section."""
         self.driver.find_element_by_xpath(self.all_events_button).click()
 
     def go_to_late_events(self):
-        """Navigate to the Late Events section."""
         self.driver.find_element_by_id(self.late_events_button).click()
 
     def open_settings(self):

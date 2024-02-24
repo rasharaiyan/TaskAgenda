@@ -1,8 +1,6 @@
 from appium import webdriver
 
 class DriverManager:
-
-
     def initialize_driver(self):
         capabilities = {
             "platformName": "Android",

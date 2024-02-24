@@ -14,7 +14,6 @@ class TestAddTask(unittest.TestCase):
 
         # Navigate to the Add Task page
         task_page.navigate_to_add_task()
-
         # Enter event details
         task_page.enter_event_name("New Task Name")
         task_page.enter_event_description("This is a detailed description of the new task.")
